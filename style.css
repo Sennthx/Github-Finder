@@ -6,7 +6,7 @@ img {
 }
 
 .hidden {
-    display: none;
+    /* display: none; */
 }
 
 #left-col {
@@ -14,4 +14,20 @@ img {
 }
 #right-col {
     width: 65%;
+}
+
+body {
+    height: 100vh;
+}
+
+#header {
+    min-height: 10%;
+}
+
+#main {
+    min-height: 85%;
+}
+
+#footer {
+    min-height: 5%;
 }

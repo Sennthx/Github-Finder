@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style References Start -->
     <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Style References End -->
     <title>Testing github api</title>
 </head>
-<body style="letter-spacing: 0.75px;">
-    <div class="navbar navbar-expand-lg me-0 border-top-0 border-start-0 border-end-0">
+<body>
+    <!-- Header Start -->
+    <div class="navbar navbar-expand-lg me-0 border-top-0 border-start-0 border-end-0" id="header">
         <div class="container">
             <h2 class="m-0">Github Finder</h2>
         </div>
     </div>
-    <div class="container my-5">
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <div class="container py-5" id="main">
         <div class="card mx-auto w-50">
             <div class="card-header"><h4 class="mb-0">Search for a Profile</h4></div>
             <div class="card-body">
@@ -73,9 +79,21 @@
             </div>
         </div>
     </div>
-    <div class="footer w-100 text-center my-2 fs-5 text">
-        Github Finder &copy;
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <div class="footer w-100 fs-5 d-flex justify-content-center align-items-center" id="footer">
+        <div>
+            Github Finder &copy;
         <a href="https://github.com/Sennthx/Github-Finder" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
     </div>
+    <!-- Footer End -->
+
+    <!-- Script References Start -->
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+    <!-- Script References End -->
 </body>
 </html>
