@@ -20,16 +20,16 @@
             <div class="card-header"><h4 class="mb-0">Search for a Profile</h4></div>
             <div class="card-body">
               <h4 class="card-title">User Name</h4>
-              <input type="text" class="w-100 p-1 px-3 font-monospace form-control" placeholder="Add a user..." id="user-input">
+              <input type="text" class="w-100 p-1 px-3 font-monospace form-control" placeholder="Github User..." id="user-input">
             </div>
         </div>
-        <div class="card mx-auto my-5 w-75" id="profile-results">
+        <div class="card mx-auto my-5 w-75 hidden" id="profile-results">
             <div class="card-header"><h4 class="mb-0">Search Result</h4></div>
             <div class="card-body">
               <div class="profile-data">
                 <div class="row">
                     <div class="col-4 d-flex flex-column" id="left-col">
-                        <div id="image-container"><img src="Slipknot_-_Slipknot2.jpg" alt="" width="100%"></div>
+                        <div id="image-container"><img src="" alt="" width="100%"></div>
                         <button class="btn btn-ligth mt-3 btn-outline-primary" type="button">View Profile</button>
                     </div>
                     <div class="col-8" id="right-col">
@@ -53,12 +53,22 @@
               </div>
             </div>
         </div>
-        <div id="profile-repo">
+        <div id="profile-repo" class="hidden">
             <div class="card mx-auto w-75">
-                <div class="card-header"><h4 class="mb-0">Search for a Profile</h4></div>
+                <div class="card-header"><h4 class="mb-0">Lates Repos</h4></div>
                 <div class="card-body">
-                  <h4 class="card-title">User Name</h4>
-                  <input type="text" class="w-100 p-1 px-3 font-monospace form-control" placeholder="Add a user..." id="user-input">
+                  <div class="container w-100">
+                    <div class="row">
+                        <div class="col-5" id="repo-name"></div>
+                        <div class="col-7">
+                            <div class="grid w-100">
+                                <span class="badge bg-success px-2">Stars: <span class="text-light"></span></span>
+                                <span class="badge bg-secondary px-2">Watchers: <span class="text-light"></span></span>
+                                <span class="badge bg-info px-2">Forks: <span class="text-light"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

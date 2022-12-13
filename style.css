@@ -5,12 +5,8 @@ img {
     object-fit: cover;
 }
 
-#profile-repo {
-    
-}
-
-#profile-results {
-    
+.hidden {
+    display: none;
 }
 
 #left-col {
