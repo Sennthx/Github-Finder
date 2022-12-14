@@ -6,7 +6,7 @@ img {
 }
 
 .hidden {
-    /* display: none; */
+    
 }
 
 #left-col {
@@ -23,11 +23,9 @@ body {
 #header {
     min-height: 10%;
 }
-
 #main {
-    min-height: 85%;
+    min-height: 80%;
 }
-
 #footer {
-    min-height: 5%;
+    min-height: 10%;
 }
