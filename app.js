@@ -13,11 +13,11 @@ userSearch.addEventListener("keyup", (e) => {
             .then(data => {
                 if (data.profile.message === "Not Found") {
                     // Show allert
+                    ui.showAlert("User is not found!")
                 }
                 else {
                     // Show profile
                     ui.showProfile(data.profile);
-                    
                     if(data.profile.public_repos > 0) {
                         ui.showRepo(data.repo.slice(0,5));
                     }
@@ -27,6 +27,7 @@ userSearch.addEventListener("keyup", (e) => {
     else {
         document.querySelector("#profile-results").innerHTML = "";
         document.querySelector("#profile-repo").innerHTML = "";
+        document.querySelector("#alert").innerHTML = "";
         // Clear profile
     }
 });

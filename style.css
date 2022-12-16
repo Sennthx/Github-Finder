@@ -33,3 +33,22 @@ body {
 #footer {
     min-height: 10%;
 }
+
+#repo-link {
+    text-decoration: none;
+}
+
+#repo-link:hover {
+    text-decoration: underline;
+}
+
+#repo-title {
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+   
+}
+
+#user-search {
+    font-size: 18px;
+}
