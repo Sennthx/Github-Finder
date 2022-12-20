@@ -4,7 +4,7 @@ class Github {
         const profileResponse = await fetch(`https://api.github.com/users/${user}`, {
             method: 'GET',
             headers: {
-                'Authorization': 'Basic ' + btoa('7aa5a917d0f12a7811d3:dcc4549d753002011686a889b184c824728b40c3')
+                'Authorization': 'Basic ' + btoa('process.env.GITHUB_CLIENT_+_SECRET')
             }
         });
         const profileData = await profileResponse.json();
@@ -12,7 +12,7 @@ class Github {
         const profileResponse2 = await fetch(`https://api.github.com/users/${user}/repos`, {
             method: "GET",
             headers: {
-                'Authorization': 'Basic ' +btoa('7aa5a917d0f12a7811d3:dcc4549d753002011686a889b184c824728b40c3')
+                'Authorization': 'Basic ' +btoa('process.env.GITHUB_CLIENT_+_SECRET')
             }
         });
         const profileData2 = await profileResponse2.json();
